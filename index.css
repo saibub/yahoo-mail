@@ -1,0 +1,262 @@
+:root {
+    --purple: rgb(121, 54, 247);
+    --darkpurple: rgb(73, 14, 184);
+    --white: #ffffff;
+    --black: #000000;
+    --darkgrey: rgb(169, 169, 169);
+    --lightgrey: rgb(155, 152, 152);
+}
+
+* {
+    /* border: 1px solid green; */
+}
+
+body {
+    background-color: var(--purple);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+}
+
+.inputbox {
+    box-sizing: border-box;
+    margin: 0.5rem 0.5rem;
+    outline: none;
+    border-bottom: 1.2px solid var(--black);
+    display: flex;
+    padding-top: 7px;
+    vertical-align: middle;
+}
+
+.inputbox input {
+    width: 95%;
+    outline: none;
+    border: none;
+    height: 1.5em;
+}
+
+.inputbox label {
+    vertical-align: middle;
+    color: var(--darkgrey);
+    width: 3.5rem;
+    margin-right: 0.9rem;
+    font-size: 1.2em;
+}
+
+.inputbox:focus-within>label {
+    color: var(--purple);
+}
+
+.inputbox:focus-within {
+    border-color: var(--purple);
+}
+
+.cc {
+    border: none;
+    color: var(--darkgrey);
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: auto;
+    justify-content: space-evenly;
+    margin-bottom: 0.2em;
+    padding-bottom: 0.5em;
+}
+
+.menu>.button {
+    margin: 10px;
+}
+
+.menu img {
+    margin-left: 12px;
+    position: relative;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.menu span {
+    box-sizing: border-box;
+    margin-left: 0.4rem;
+}
+
+.menu span[button-clickable] {
+    cursor: pointer;
+}
+
+.smallicons {
+    display: flex;
+}
+
+.smallicons img {
+    margin-top: 15px;
+    font-size: 1.3em;
+    padding-right: 7px;
+}
+
+img {
+    height: 1.5em;
+    width: auto;
+}
+
+#linkbutton {
+    padding-right: 7px;
+}
+
+#fontcase {
+    margin-top: 1.5em;
+    height: 2em;
+}
+
+#morebutton,
+#circlebutton {
+    font-size: 1em;
+    padding-right: 0.3em;
+    margin-top: 0px;
+}
+
+#fontcase {
+    font-size: 14px;
+}
+
+form {
+    border: 3px solid var(--darkpurple);
+    background-color: var(--white);
+}
+
+#saved {
+    color: #545454;
+    font-weight: 500;
+    font-family: monospace;
+    cursor: default;
+    padding-left: 25rem;
+    padding-top: 7px;
+    font-size: 1.2em;
+}
+
+#delete {
+    font-size: 0.6em;
+}
+
+input[type="submit"] {
+    color: var(--white);
+    background: var(--purple);
+    border-radius: 0.7em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5em 1.7em 0.5em 1.7em;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 325px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+}
+
+#vertical-hr {
+    margin-left: 20px;
+    width: 0.2px;
+    height: 2.5rem;
+    background: var(--lightgrey);
+}
+
+#file-input {
+    display: none;
+}
+
+#bbutton,
+#ibutton,
+#fontcase {
+    align-items: center;
+    padding: 0px 5px 2px 0px;
+    margin-right: 1.5px;
+}
+
+#deletebutton {
+    font-size: 1.9em;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.button-active {
+    background-color: rgb(218, 217, 219);
+}
+
+.uppercase-active {
+    text-transform: uppercase;
+}
+
+.italic-active {
+    font-style: italic;
+}
+
+.bold-active {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 430px) {
+    #saved {
+        display: none;
+    }
+    #vertical-hr {
+        display: none;
+    }
+    input[type="submit"] {
+        padding: 0.4em 1.2em 0.3em 1.2em;
+        font-size: 1.1em;
+        border-radius: 8px;
+    }
+    input {
+        font-size: 0.9em;
+    }
+    .inputbox label {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    input {
+        font-size: 0.9em;
+    }
+    .inputbox label {
+        font-size: 0.9em;
+    }
+    .menu img {
+        font-size: 0.7em;
+    }
+    .smallicons img {
+        font-size: 0.9em;
+    }
+    #fontcase {
+        font-size: 0.7em;
+    }
+    #deletebutton {
+        margin-top: 3px;
+        font-size: 1.4em;
+    }
+}

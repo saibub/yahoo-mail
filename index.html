@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Yahoo Mail</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form name="myForm">
+            <div class="inputbox">
+                <label>From:</label>
+                <input type="email" name="from" id="from" value="himanshu.mishra@leadsquared.com" /><br />
+            </div>
+
+            <div class="inputbox">
+                <label>To:</label>
+                <input type="email" name="to" id="to" /><br />
+                <span class="cc" id="ccButton" onclick="hideCc()">Cc/Bc</span>
+            </div>
+
+            <div id="ccDiv"></div>
+            <div class="inputbox">
+                <label>Subject:</label>
+                <input type="text" name="subject" /><br />
+            </div>
+
+            <textarea name="”msgbody”" rows="”400″" cols="”200″" id="TextArea" class="textbox"></textarea><br />
+            <hr />
+
+            <div class="menu">
+                <input type="submit" onclick="send()" value="Send" class="button" />
+        </form>
+
+
+
+        <!-- ATTACH FILE -->
+        <span id="attachbutton" onclick="attachment()" button-clickable class="smallicons">       
+            <img
+              class="button"
+              id="file"
+              src="assets/images/paper-clips-attach-svgrepo-com.svg"
+              alt="attach"
+            />
+            <input id="file-input" type="file" name="file" />
+          </span>
+        <span class="smallicons">
+          <img 
+            class="button" 
+            id="gif" 
+            src="assets/images/gif-svgrepo-com.svg" 
+            alt="gif" 
+          /></span>
+        <span class="smallicons">
+            <img
+              class="button"
+              src="assets/images/cards-hearts-svgrepo-com.svg"
+              alt="cards"
+            /></span>
+        <span class="smallicons">
+            <img 
+              class="button" 
+              src="assets/images/emoji-svgrepo-com.svg" 
+              alt="emoji" 
+            /></span>
+
+
+        <!-- vertical divider -->
+        <hr class="button" id="vertical-hr" />
+
+        <!-- LINKBUTTON -->
+        <span id="linkbutton">
+            <img
+              class="button"
+              src="assets/images/OOjs_UI_icon_link-ltr.svg"
+              alt="link"
+              id="link"
+            />
+          </span>
+
+        <!-- BOLD -->
+        <span id="bbutton" onclick="boldText()" button-clickable>            
+            <img
+              class="button"
+              src="assets/images/bold-svgrepo-com.svg"
+              alt="bold"
+              id="bold"              
+            />
+          </span>
+
+        <!-- ITALICS -->
+        <span id="ibutton" onclick="italicText()" button-clickable>
+            <img
+              class="button"
+              src="assets/images/italics-svgrepo-com.svg"
+              alt="italics"
+              id="italics"              
+            />
+            </span>
+        <span id="circlebutton">
+            <img class="button" src="assets/images/circles.svg" alt="circles" id="circles" />
+          </span>
+
+        <!-- UPPERCASE button -->
+        <span id="casebutton" onclick="upperCase()" button-clickable>
+            <img
+              class="button"
+              src="assets/images/fontcase.png"
+              alt="fontcase"
+              id="fontcase"              
+            />
+            </span>
+        <span id="morebutton">
+            <img
+              class="button"
+              src="assets/images/menu-svgrepo-com.svg"
+              alt="morebutton"
+              id="moreimage"
+            />
+          </span>
+
+        <span class="button" id="saved">Saved</span>
+
+        <span class="smallicons" id="deletebutton">        
+            <img
+              class="button"
+              src="assets/images/delete-svgrepo-com.svg"
+              alt="delete"
+              id="delete"
+            />
+          </span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

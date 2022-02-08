@@ -1,0 +1,28 @@
+<?xml version="1.0"?><svg width="437.5" height="437.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>3circles</title>
+ <defs>
+  <linearGradient id="linearGradient580">
+   <stop id="stop581" offset="0" stop-opacity="0.6667" stop-color="#ffff8a"/>
+   <stop id="stop582" offset="1" stop-opacity="0.3961" stop-color="#000000"/>
+  </linearGradient>
+  <linearGradient id="linearGradient53">
+   <stop id="stop54" offset="0" stop-color="#faff00"/>
+   <stop id="stop55" offset="1" stop-color="#026d00"/>
+  </linearGradient>
+  <linearGradient id="linearGradient48">
+   <stop id="stop49" offset="0" stop-color="#000f67"/>
+   <stop id="stop50" offset="1" stop-color="#ffffff"/>
+  </linearGradient>
+  <linearGradient id="linearGradient51" x1="0.8" x2="0.523077" xlink:href="#linearGradient53" y1="0.445315" y2="0.609375"/>
+  <linearGradient id="linearGradient52" x1="0.138463" x2="0.430769" xlink:href="#linearGradient53" y1="0.382811" y2="0.539063"/>
+  <linearGradient id="linearGradient32" x1="0.101911" x2="0.942675" xlink:href="#linearGradient48" y1="0.465409" y2="0.45283"/>
+  <linearGradient id="linearGradient33" x1="0" x2="1" xlink:href="#linearGradient48" y1="0" y2="1"/>
+  <radialGradient cx="0.5" cy="0.5" fx="0.5" fy="0.5" id="radialGradient579" r="0.5" xlink:href="#linearGradient53"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <ellipse cx="221.487444" cy="162.708612" id="path628" rx="122.387627" ry="120.980881" fill-rule="evenodd" fill="#7f00ff" opacity="0.5"/>
+  <ellipse cx="297.452164" cy="274.757049" id="path623" rx="122.387627" ry="120.980881" fill-rule="evenodd" fill="#0000ff" opacity="0.55"/>
+  <ellipse cx="137.641655" cy="279.757049" id="path624" rx="122.387627" ry="120.980881" fill-rule="evenodd" fill="#45f745" opacity="0.6"/>
+ </g>
+</svg>
